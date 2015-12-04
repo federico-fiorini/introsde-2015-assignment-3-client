@@ -1,0 +1,56 @@
+===============================================================
+Server deployed at: https://warm-brook-6204.herokuapp.com/ws/people?wsdl
+
+---------------------------------------------------------------
+Method #1: readPerson(56)
+Result ==> Person: 56 Micky Mouse
+
+---------------------------------------------------------------
+Method #2: readPersonList()
+Result ==> Found 5 people:
+	56 Micky Mouse
+	407 Donald Duck
+	556 Minnie Mouse
+	706 Dippy Dawg
+	1657 Pluto The Pup
+
+---------------------------------------------------------------
+Method #3: updatePerson(person) [firstname: TEST NEW NAME]
+Result ==> Person: 56 TEST NEW NAME Mouse
+
+---------------------------------------------------------------
+Method #4: createPerson(newPerson) [firstname: Chuck]
+Result ==> Person: 2206 Chuck Norris
+
+---------------------------------------------------------------
+Method #5: deletePerson(2206)
+Result ==> Person with id 2206: NULL
+
+---------------------------------------------------------------
+Method #6: readPersonHistory(56, 'weight')
+Result ==> Found 6 measures:
+	weight: 65 kg
+	weight: 67 kg
+	weight: 72 kg
+	weight: 80 kg
+	weight: 95 kg
+	weight: 100 kg
+
+---------------------------------------------------------------
+Method #7: readMeasureTypes()
+Result ==> Found 3 measure types:
+	height
+	bloodpressure
+	weight
+
+---------------------------------------------------------------
+Method #8: readPersonMeasure(56, weight, 2008)
+Result ==> MeasureID = 2008, weight: 100
+
+---------------------------------------------------------------
+Method #9: savePersonMeasure(56, newMeasure) [height: 180 cm]
+Result ==> MeasureID = 1318, height: 180
+
+---------------------------------------------------------------
+Method #10: updatePersonMeasure(56, measure) [value: 100]
+Result ==> MeasureID = 2008, weight: 100

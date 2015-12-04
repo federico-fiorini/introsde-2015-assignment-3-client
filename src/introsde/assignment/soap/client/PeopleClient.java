@@ -140,6 +140,9 @@ public class PeopleClient {
         Long measureId = people.updatePersonMeasure(person.getId(), measureExample);
         String measureValue = people.readPersonMeasure(person.getId(), "weight", measureId);
         printAndLog("Result ==> MeasureID = " + measureId + ", weight: " + measureValue);
+        
+        // Close writer
+        logWriter.close();
     }
     
     /**
